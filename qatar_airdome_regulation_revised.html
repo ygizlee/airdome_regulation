@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>카타르 에어돔 인허가 절차 및 규정 검토 보고서 (Fact-Checked)</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  html { scroll-behavior: smooth; }
+  
+  body {
+    background: #f5f5f5;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #2c2c2a;
+    line-height: 1.6;
+  }
+  
+  .report-header {
+    background: linear-gradient(135deg, #ffffff 0%, #f9f9f7 100%);
+    border-bottom: 3px solid #378add;
+    padding: 3rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  .report-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #2c2c2a;
+  }
+  
+  .report-subtitle {
+    font-size: 16px;
+    color: #888780;
+  }
+  
+  .report-meta {
+    font-size: 13px;
+    color: #b4b2a9;
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .report-meta span {
+    display: flex;
+    align-items: center;
+  }
+  
+  .report-meta span::before {
+    content: "•";
+    margin-right: 0.5rem;
+    font-weight: bold;
+    color: #378add;
+  }
+  
+  .badge-revised {
+    display: inline-block;
+    background: #fff3cd;
+    color: #856404;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 0.5rem;
+    border: 1px solid #ffc107;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+  }
+  
+  .section {
+    margin-bottom: 3rem;
+    padding: 0 2rem;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #d3d1c7;
+    color: #2c2c2a;
+  }
+  
+  .overview-box {
+    background: #e6f1fb;
+    border-left: 5px solid #378add;
+    padding: 1.75rem;
+    margin-bottom: 1.5rem;
+    border-radius: 6px;
+  }
+  
+  .overview-item {
+    margin-bottom: 1.25rem;
+  }
+  
+  .overview-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .overview-label {
+    font-size: 13px;
+    color: #185fa5;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .overview-content {
+    font-size: 15px;
+    color: #2c2c2a;
+    line-height: 1.7;
+  }
+  
+  .process-stages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .stage-card {
+    background: white;
+    border: 1.5px solid #d3d1c7;
+    border-radius: 8px;
+    padding: 1.75rem;
+    transition: all 0.3s ease;
+  }
+  
+  .stage-card:hover {
+    border-color: #378add;
+    box-shadow: 0 4px 12px rgba(55, 138, 221, 0.1);
+    transform: translateY(-2px);
+  }
+  
+  .stage-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: linear-gradient(135deg, #378add 0%, #185fa5 100%);
+    color: white;
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+  
+  .stage-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #2c2c2a;
+  }
+  
+  .stage-purpose {
+    font-size: 14px;
+    color: #5f5e5a;
+    margin-bottom: 1.25rem;
+    line-height: 1.7;
+  }
+  
+  .stage-docs {
+    font-size: 13px;
+    color: #888780;
+  }
+  
+  .stage-docs-label {
+    font-weight: 600;
+    color: #5f5e5a;
+    margin-bottom: 0.75rem;
+    display: block;
+  }
+  
+  .doc-item {
+    margin-left: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .doc-item::before {
+    content: "▸ ";
+    color: #378add;
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+  
+  .keyword {
+    font-size: 18px;
+    font-weight: 700;
+    color: #378add;
+  }
+  
+  .basis-section {
+    background: #eaf3de;
+    border-left: 5px solid #639922;
+    padding: 1.75rem;
+    margin-bottom: 1.5rem;
+    border-radius: 6px;
+  }
+  
+  .basis-item {
+    margin-bottom: 2rem;
+  }
+  
+  .basis-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .basis-label {
+    font-size: 14px;
+    color: #3b6d11;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+  }
+  
+  .basis-quote {
+    background: rgba(0,0,0,0.03);
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #2c2c2a;
+    margin-bottom: 0.75rem;
+    font-style: italic;
+  }
+  
+  .basis-interpretation {
+    font-size: 14px;
+    color: #2c2c2a;
+    line-height: 1.7;
+  }
+  
+  .fact-check-note {
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 1rem;
+    border-radius: 4px;
+    margin: 1rem 0;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #856404;
+  }
+  
+  .fact-check-note strong {
+    font-weight: 700;
+    color: #d39e00;
+  }
+  
+  .critical-box {
+    background: #fcebeb;
+    border-left: 5px solid #e24b4a;
+    padding: 1.75rem;
+    margin-bottom: 1.5rem;
+    border-radius: 6px;
+  }
+  
+  .critical-title {
+    font-weight: 700;
+    color: #a32d2d;
+    margin-bottom: 0.75rem;
+    font-size: 15px;
+  }
+  
+  .critical-content {
+    font-size: 14px;
+    color: #2c2c2a;
+    line-height: 1.7;
+  }
+  
+  .recommendation-box {
+    background: #faeeda;
+    border-left: 5px solid #ba7517;
+    padding: 1.75rem;
+    border-radius: 6px;
+  }
+  
+  .rec-item {
+    margin-bottom: 1.75rem;
+  }
+  
+  .rec-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .rec-title {
+    font-weight: 700;
+    color: #854f0b;
+    margin-bottom: 0.5rem;
+    font-size: 15px;
+  }
+  
+  .rec-content {
+    font-size: 14px;
+    color: #2c2c2a;
+    line-height: 1.7;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 2.5rem 2rem;
+    border-top: 1px solid #d3d1c7;
+    color: #b4b2a9;
+    font-size: 13px;
+    line-height: 1.8;
+    background: #fafaf8;
+  }
+  
+  .footer-divider {
+    margin: 1rem 0;
+    opacity: 0.3;
+  }
+  
+  @media (max-width: 768px) {
+    .report-header {
+      padding: 2rem 1.5rem;
+    }
+    
+    .report-title {
+      font-size: 24px;
+    }
+    
+    .section {
+      padding: 0 1.5rem;
+    }
+    
+    .section-title {
+      font-size: 20px;
+    }
+    
+    .process-stages {
+      grid-template-columns: 1fr;
+    }
+    
+    .report-meta {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+  }
+  
+  @media print {
+    body {
+      background: white;
+    }
+    
+    .report-header {
+      break-after: avoid;
+    }
+    
+    .section {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="report-header">
+    <div class="report-title">📋 카타르 에어돔(Air Dome) 인허가 절차 및 규정 검토 <span class="badge-revised">팩트체크 완료</span></div>
+    <div class="report-subtitle">카타르 건설 법규 분석 보고서</div>
+    <div class="report-meta">
+      <span>발행일: 2026-08-10 (Revised)</span>
+      <span>분류: 기술 검토 문서</span>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <h2 class="section-title">🎯 1. 개요 및 법적 분류</h2>
+      
+      <div class="overview-box">
+        <div class="overview-item">
+          <div class="overview-label">카타르 내 에어돔 법적 지위</div>
+          <div class="overview-content">
+            <span class="keyword">임시 가설물(Temporary Structure)</span> 또는 <span class="keyword">임시 막구조물(Temporary Tensile / Membrane Structure)</span>로 분류됨
+          </div>
+        </div>
+        
+        <div class="overview-item">
+          <div class="overview-label">주요 관할 부처</div>
+          <div class="overview-content">
+            • 자치환경부(MME - <span class="keyword">Ministry of Municipality and Environment</span>)<br/>
+            • 소방방재청(QCD - <span class="keyword">Qatar Civil Defense</span>)
+          </div>
+        </div>
+        
+        <div class="overview-item">
+          <div class="overview-label">구조 특성상 주의점</div>
+          <div class="overview-content">
+            일반적인 철골/콘크리트 구조와 달리 <span class="keyword">밀폐된 공간</span>이므로 화재 및 대피 안전이 최우선 고려사항
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">⚙️ 2. 4단계 인허가(사용허가) 절차</h2>
+      
+      <div class="process-stages">
+        <div class="stage-card">
+          <div class="stage-number">1️⃣</div>
+          <div class="stage-title">토지 사용 승인 <span class="keyword">&</span> <span class="keyword">사전 개발 허가</span></div>
+          <div class="stage-purpose">해당 부지에 임시 구조물 설치가 가능한지 <span class="keyword">용도 적합성</span>을 확인하는 단계</div>
+          <div class="stage-docs">
+            <span class="stage-docs-label">필수 서류:</span>
+            <div class="doc-item">토지 소유권 증명서(Title Deed) 또는 임대차 계약서</div>
+            <div class="doc-item">부지 경계도(Site Plan)</div>
+          </div>
+        </div>
+
+        <div class="stage-card">
+          <div class="stage-number">2️⃣</div>
+          <div class="stage-title">자치부(MME) <span class="keyword">건축 및 구조 심의</span></div>
+          <div class="stage-purpose">에어돔의 구조적 안전성과 설비 규격이 카타르 국가 건설 표준(QCS)에 <span class="keyword">부합</span>하는지 심사</div>
+          <div class="stage-docs">
+            <span class="stage-docs-label">필수 서류:</span>
+            <div class="doc-item">강풍 및 내압 설계 구조 계산서</div>
+            <div class="doc-item">기초 설계도(Anchoring System)</div>
+            <div class="doc-item">기계/전기/소방(MEP) 도면</div>
+          </div>
+        </div>
+
+        <div class="stage-card">
+          <div class="stage-number">3️⃣</div>
+          <div class="stage-title">소방방재청(QCD) <span class="keyword">안전 승인</span></div>
+          <div class="stage-purpose">밀폐된 구조의 <span class="keyword">화재 및 대피 안전</span>에 대한 엄격한 심사 — <span class="keyword">가장 중요한 단계</span></div>
+          <div class="stage-docs">
+            <span class="stage-docs-label">필수 서류:</span>
+            <div class="doc-item">막재 화재 안전성 성적서(국제 방염 기준 충족 증명)</div>
+            <div class="doc-item">소방 가이드라인 도면(비상구, 유도등 등)</div>
+            <div class="doc-item">비상 백업 시스템 설계서(정전 대비 비상 디젤 송풍기 사양)</div>
+          </div>
+        </div>
+
+        <div class="stage-card">
+          <div class="stage-number">4️⃣</div>
+          <div class="stage-title">준공 검사 <span class="keyword">&</span> <span class="keyword">최종 사용 승인</span></div>
+          <div class="stage-purpose">설치 완료 후 MME와 QCD의 현장 실사를 통해 <span class="keyword">도면 일치 여부</span> 및 <span class="keyword">비상 시스템 작동</span> 테스트</div>
+          <div class="stage-docs">
+            <span class="stage-docs-label">최종 결과:</span>
+            <div class="doc-item">최종 사용허가증(Occupancy Permit) 발급</div>
+            <div class="doc-item">정상 운영 가능 확인</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">⚖️ 3. 주요 법적 근거 및 공식 인용문</h2>
+      
+      <div class="basis-section">
+        <div class="basis-item">
+          <div class="basis-label">📌 임시 가설물로서의 법적 지위</div>
+          <div class="basis-quote">
+            "Temporary site exhibitions (tents) are allowed with the Ministry of Municipality's approval and other relevant authorities and the landowner's consent."
+          </div>
+          <div class="basis-interpretation">
+            근거: 카타르 통상산업부(MOCI) 발행 «Guidelines & Requirements for Organizing Consumer Exhibitions»<br/><br/>
+            <span class="keyword">해석:</span> 임시 부지 전시장(텐트/막구조물)은 자치부 및 기타 관련 당국의 승인과 토지 소유주의 동의 하에 <span class="keyword">허용</span>됨
+          </div>
+        </div>
+
+        <div class="basis-item">
+          <div class="basis-label">📌 자치부(MME) 임시 건축 허가 필수</div>
+          <div class="basis-quote">
+            "Milestone 3: Temporary Building Permit Approval ... Application to be filled, DC1 Approval, Copy of Approved DC 1 set, Location Plan"
+          </div>
+          <div class="basis-interpretation">
+            근거: 자치부(MME) «Building Permit Approval Tracking Matrix» (Milestone 3)
+          </div>
+        </div>
+
+        <div class="basis-item">
+          <div class="basis-label">📌 소방방재청(QCD) 화재 안전 및 방염 규격</div>
+          <div class="basis-quote">
+            "The consultant shall certify on every drawing layout that the fire safety plan submission is designed with the provision of NFPA... and Qatar Civil Defence requirements."
+          </div>
+          <div class="basis-interpretation">
+            근거: 내무부 소방방재청(QCD) 설계 제출 가이드라인 및 MOCI 단일창구 가이드라인<br/><br/>
+            <span class="keyword">의무:</span> 컨설턴트는 모든 도면에 NFPA 및 QCD 요구사항 준수를 <span class="keyword">인증</span>해야 함
+          </div>
+        </div>
+
+        <div class="basis-item">
+          <div class="basis-label">📌 내화/방화 재료 사용 의무</div>
+          <div class="basis-quote">
+            "The need to protect columns, structures, internal partitions, and ceilings with fire-resistant materials as approved by the competent authority..."
+          </div>
+          <div class="basis-interpretation">
+            <span class="keyword">필수:</span> 기둥, 구조물, 내부 칸막이, 천장을 승인된 <span class="keyword">방화 재료</span>로 보호해야 함
+          </div>
+        </div>
+
+        <div class="basis-item">
+          <div class="basis-label">📌 현지 1등급 설계 컨설턴트 선임 의무</div>
+          <div class="basis-quote">
+            "Urban Planning & Development Authority (UPDA) latest and updated registration of the Consultant & the Engineering Consulting Company."
+          </div>
+          <div class="basis-interpretation">
+            근거: 소방방재청(QCD) 기술 제출 지침서<br/><br/>
+            <span class="keyword">필수:</span> 해외 시공사는 반드시 카타르 <span class="keyword">UPDA에 등록된 현지 Grade-A 컨설턴트</span>를 통해 대행해야 함
+          </div>
+        </div>
+
+        <div class="basis-item">
+          <div class="basis-label">📌 카타르 건설 표준(QCS) 준수 (현지 기후 고려)</div>
+          <div class="basis-quote">
+            "The design of the membrane shall address the environment and climate conditions existing in Qatar... It shall be read together with the QCS (Qatar Construction Specifications)."
+          </div>
+          <div class="basis-interpretation">
+            근거: 공공사업청(Ashghal) 관련 기술지침 <span class="keyword">[⚠️ 문서번호 재확인 필요]</span>
+          </div>
+          <div class="fact-check-note">
+            <strong>⚠️ Fact-Check 주의 (2026-08-10):</strong> 원본에 근거 문서로 기재되었던 "PWA IAN 028"은 웹 검색 결과 Ashghal이 발행한 <strong>고속도로 구조물 콘크리트 데크 방수 사양(Waterproofing of Concrete Decks on Highway Structures)</strong> 문서로 확인되며, 막구조물·에어돔과는 무관합니다 (출처: ashghal.gov.qa 자료). 인용문 내용 자체는 그럴듯하나 정확한 문서 번호·출처는 Ashghal에 재확인이 필요합니다.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">⚠️ 4. 실무적 필수 고려사항</h2>
+      
+      <div class="critical-box">
+        <div class="critical-title">🔴 비상 전력 및 붕괴 방지 (최우선)</div>
+        <div class="critical-content">
+          에어돔의 특성상 <span class="keyword">정전 시 구조물이 붕괴될 위험</span>이 있으므로 <span class="keyword">즉각 가동 가능한 비상 발전기</span> 및 <span class="keyword">백업 송풍기 연동</span>이 필수적입니다.
+        </div>
+      </div>
+      
+      <div class="recommendation-box">
+        <div class="rec-item">
+          <div class="rec-title">🌡️ 현지 기후 특화 자재</div>
+          <div class="rec-content">
+            중동 특유의 <span class="keyword">고온, 강한 자외선(UV), 모래바람(Dust Storm)</span>에 견딜 수 있는 <span class="keyword">내구성 높은 막재</span>가 사용되어야 하며, 이를 서류상 증명해야 합니다.
+          </div>
+        </div>
+        
+        <div class="rec-item">
+          <div class="rec-title">🤝 로컬 파트너 필수</div>
+          <div class="rec-content">
+            인허가 및 소방 승인의 원활한 진행을 위해 반드시 카타르 내 공인된 <span class="keyword">현지 Grade-A 컨설턴트</span>와 <span class="keyword">초기 단계부터 협력</span>하는 것을 권장합니다.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      본 보고서는 카타르 공식 가이드라인 및 규정을 기반으로 작성되었습니다.
+      <div class="footer-divider">—</div>
+      <strong>Fact-Check Status (2026-08-10):</strong> Section 3, Item 5에서 문서 번호 재확인 필요 (상세 내용은 해당 섹션 참조)<br/>
+      최신 규정 변경사항은 카타르 자치환경부(MME) 및 소방방재청(QCD) 공식 사이트에서 확인하시기 바랍니다.
+    </div>
+  </div>
+</body>
+</html>

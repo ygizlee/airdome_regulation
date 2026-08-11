@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UAE 에어돔 인허가 및 사용허가 절차 (Fact-Checked)</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  html { scroll-behavior: smooth; }
+  
+  body {
+    background: #f5f5f5;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #2c2c2a;
+    line-height: 1.6;
+  }
+  
+  .report-header {
+    background: linear-gradient(135deg, #ffffff 0%, #f9f9f7 100%);
+    border-bottom: 3px solid #d4537e;
+    padding: 3rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  .report-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #2c2c2a;
+  }
+  
+  .report-subtitle {
+    font-size: 16px;
+    color: #888780;
+  }
+  
+  .report-meta {
+    font-size: 13px;
+    color: #b4b2a9;
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .report-meta span {
+    display: flex;
+    align-items: center;
+  }
+  
+  .report-meta span::before {
+    content: "•";
+    margin-right: 0.5rem;
+    font-weight: bold;
+    color: #d4537e;
+  }
+  
+  .badge-revised {
+    display: inline-block;
+    background: #fff3cd;
+    color: #856404;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 0.5rem;
+    border: 1px solid #ffc107;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+  }
+  
+  .section {
+    margin-bottom: 3rem;
+    padding: 0 2rem;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #d3d1c7;
+    color: #2c2c2a;
+  }
+  
+  .overview-box {
+    background: #fbeaf0;
+    border-left: 5px solid #d4537e;
+    padding: 1.75rem;
+    margin-bottom: 1.5rem;
+    border-radius: 6px;
+  }
+  
+  .overview-item {
+    margin-bottom: 1.25rem;
+  }
+  
+  .overview-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .overview-label {
+    font-size: 13px;
+    color: #993556;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .overview-content {
+    font-size: 15px;
+    color: #2c2c2a;
+    line-height: 1.7;
+  }
+  
+  .process-stages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .stage-card {
+    background: white;
+    border: 1.5px solid #d3d1c7;
+    border-radius: 8px;
+    padding: 1.75rem;
+    transition: all 0.3s ease;
+  }
+  
+  .stage-card:hover {
+    border-color: #d4537e;
+    box-shadow: 0 4px 12px rgba(212, 83, 126, 0.1);
+    transform: translateY(-2px);
+  }
+  
+  .stage-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: linear-gradient(135deg, #d4537e 0%, #993556 100%);
+    color: white;
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+  
+  .stage-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #2c2c2a;
+  }
+  
+  .stage-purpose {
+    font-size: 14px;
+    color: #5f5e5a;
+    margin-bottom: 1.25rem;
+    line-height: 1.7;
+  }
+  
+  .stage-docs {
+    font-size: 13px;
+    color: #888780;
+  }
+  
+  .stage-docs-label {
+    font-weight: 600;
+    color: #5f5e5a;
+    margin-bottom: 0.75rem;
+    display: block;
+  }
+  
+  .doc-item {
+    margin-left: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .doc-item::before {
+    content: "▸ ";
+    color: #d4537e;
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+  
+  .keyword {
+    font-size: 18px;
+    font-weight: 700;
+    color: #d4537e;
+  }
+  
+  .basis-section {
+    background: #eaf3de;
+    border-left: 5px solid #639922;
+    padding: 1.75rem;
+    margin-bottom: 1.5rem;
+    border-radius: 6px;
+  }
+  
+  .basis-item {
+    margin-bottom: 2rem;
+  }
+  
+  .basis-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .basis-label {
+    font-size: 14px;
+    color: #3b6d11;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+  }
+  
+  .basis-quote {
+    background: rgba(212, 83, 126, 0.08);
+    padding: 1rem;
+    border-radius: 6px;
+    border-left: 3px solid #d4537e;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #2c2c2a;
+    margin-bottom: 0.75rem;
+    font-style: italic;
+  }
+  
+  .basis-doc-ref {
+    font-size: 13px;
+    color: #5f5e5a;
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+  }
+  
+  .basis-interpretation {
+    font-size: 14px;
+    color: #2c2c2a;
+    line-height: 1.7;
+  }
+  
+  .fact-check-note {
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 1rem;
+    border-radius: 4px;
+    margin: 1rem 0;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #856404;
+  }
+  
+  .fact-check-note strong {
+    font-weight: 700;
+    color: #d39e00;
+  }
+  
+  .critical-box {
+    background: #fcebeb;
+    border-left: 5px solid #e24b4a;
+    padding: 1.75rem;
+    margin-bottom: 1.5rem;
+    border-radius: 6px;
+  }
+  
+  .critical-title {
+    font-weight: 700;
+    color: #a32d2d;
+    margin-bottom: 0.75rem;
+    font-size: 15px;
+  }
+  
+  .critical-content {
+    font-size: 14px;
+    color: #2c2c2a;
+    line-height: 1.7;
+  }
+  
+  .recommendation-box {
+    background: #faeeda;
+    border-left: 5px solid #ba7517;
+    padding: 1.75rem;
+    border-radius: 6px;
+  }
+  
+  .rec-item {
+    margin-bottom: 1.75rem;
+  }
+  
+  .rec-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .rec-title {
+    font-weight: 700;
+    color: #854f0b;
+    margin-bottom: 0.5rem;
+    font-size: 15px;
+  }
+  
+  .rec-content {
+    font-size: 14px;
+    color: #2c2c2a;
+    line-height: 1.7;
+  }
+  
+  .comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 13px;
+  }
+  
+  .comparison-table th {
+    background: #f0f0ed;
+    border: 1px solid #d3d1c7;
+    padding: 0.75rem;
+    text-align: left;
+    font-weight: 600;
+    color: #2c2c2a;
+  }
+  
+  .comparison-table td {
+    border: 1px solid #d3d1c7;
+    padding: 0.75rem;
+    color: #2c2c2a;
+  }
+  
+  .comparison-table tr:nth-child(even) {
+    background: #fafaf8;
+  }
+  
+  .uae-region-box {
+    background: #f0f4ff;
+    border: 1px solid #b5d4f4;
+    padding: 1rem;
+    border-radius: 6px;
+    margin: 1.5rem 0;
+    font-size: 13px;
+    color: #0c447c;
+    line-height: 1.7;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 2.5rem 2rem;
+    border-top: 1px solid #d3d1c7;
+    color: #b4b2a9;
+    font-size: 13px;
+    line-height: 1.8;
+    background: #fafaf8;
+  }
+  
+  .footer-divider {
+    margin: 1rem 0;
+    opacity: 0.3;
+  }
+  
+  @media (max-width: 768px) {
+    .report-header {
+      padding: 2rem 1.5rem;
+    }
+    
+    .report-title {
+      font-size: 24px;
+    }
+    
+    .section {
+      padding: 0 1.5rem;
+    }
+    
+    .section-title {
+      font-size: 20px;
+    }
+    
+    .process-stages {
+      grid-template-columns: 1fr;
+    }
+    
+    .report-meta {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    
+    .comparison-table {
+      font-size: 12px;
+    }
+    
+    .comparison-table th,
+    .comparison-table td {
+      padding: 0.5rem;
+    }
+  }
+  
+  @media print {
+    body {
+      background: white;
+    }
+    
+    .report-header {
+      break-after: avoid;
+    }
+    
+    .section {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="report-header">
+    <div class="report-title">🏗️ 아랍에미리트(UAE) 에어돔(Air Dome) 인허가 및 사용허가 절차 <span class="badge-revised">팩트체크 완료</span></div>
+    <div class="report-subtitle">UAE 화재안전 규정 및 법적 근거 분석 보고서</div>
+    <div class="report-meta">
+      <span>발행일: 2026-08-10 (Fact-Checked)</span>
+      <span>분류: 기술 검토 문서</span>
+      <span>대상: Samsung E&A 중동 사업팀</span>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <h2 class="section-title">📋 1. 법적 분류 및 근거 법규</h2>
+      
+      <div class="overview-box">
+        <div class="overview-item">
+          <div class="overview-label">UAE 화재안전 규정상 에어돔 분류</div>
+          <div class="overview-content">
+            <span class="keyword">임시 막구조물(Temporary Membrane Structure)</span> — 유연한 막재(Pliable material)로 제작된 구조물로 분류
+          </div>
+        </div>
+        
+        <div class="overview-item">
+          <div class="overview-label">적용 법규</div>
+          <div class="overview-content">
+            • <span class="keyword">UAE Fire & Life Safety Code of Practice</span> (2017/2026 Updated)<br/>
+            • <span class="keyword">ADOSH-SF CoP 43.0</span> (舊 OSHAD-SF, 아부다비 임시 막구조물 안전보건)<br/>
+            • <span class="keyword">Dubai Municipality / Abu Dhabi Municipality</span> 규정
+          </div>
+        </div>
+        
+        <div class="overview-item">
+          <div class="overview-label">주요 관할 부처 및 승인 기관</div>
+          <div class="overview-content">
+            • <span class="keyword">Dubai Municipality (DM)</span> / <span class="keyword">Abu Dhabi Municipality (ADM)</span><br/>
+            • <span class="keyword">Dubai Civil Defense (DCD)</span> / <span class="keyword">Abu Dhabi Civil Defense (ADCD)</span><br/>
+            • <span class="keyword">DEWA</span> (전력·용수) / <span class="keyword">ADDC</span> (아부다비 전력)<br/>
+            • <span class="keyword">Civil Defence Registered Consultants</span> (설계 대행사)
+          </div>
+        </div>
+      </div>
+
+      <div class="fact-check-note">
+        <strong>⚠️ Fact-Check 주의 (2026-08-10):</strong> 아부다비 안전보건 프레임워크는 <strong>2024년 1월 1일자로 명칭이 OSHAD-SF → ADOSH-SF로, 발행기관도 OSHAD → ADPHC(Abu Dhabi Public Health Center)로 변경</strong>되었습니다. CoP 43.0(Temporary Structures)도 <strong>2024년 7월 15일 기준 Version 4.0까지 개정</strong>되었으므로, 실무 적용 시 ADOSH-SF 최신판 원문 확인이 필수입니다 (출처: ADPHC 공식 CoP 43 문서).
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">⚙️ 2. 단계별 사용허가 절차</h2>
+      
+      <div class="process-stages">
+        <div class="stage-card">
+          <div class="stage-number">1️⃣</div>
+          <div class="stage-title">토지 사용 <span class="keyword">NOC</span> <span class="keyword">&</span> <span class="keyword">상업 등록</span></div>
+          <div class="stage-purpose">토지/건물 소유주의 <span class="keyword">무이의 증명서(NOC)</span> 및 유효한 <span class="keyword">상업등록증(Trade License)</span> 확보</div>
+          <div class="stage-docs">
+            <span class="stage-docs-label">필수 서류:</span>
+            <div class="doc-item">상업등록증(Trade License)</div>
+            <div class="doc-item">토지/건물 소유주 무이의 증명서(NOC)</div>
+            <div class="doc-item">가설 작업 수행 허가권 확인</div>
+          </div>
+        </div>
+
+        <div class="stage-card">
+          <div class="stage-number">2️⃣</div>
+          <div class="stage-title"><span class="keyword">Civil Defence</span> <span class="keyword">등록 엔지니어</span> 선임</div>
+          <div class="stage-purpose"><span class="keyword">Dubai/Abu Dhabi Civil Defense</span>에 등록된 공인 컨설턴트 엔지니어가 풍압·구조 계산서 및 MEP 도면 검수</div>
+          <div class="stage-docs">
+            <span class="stage-docs-label">필수 사항:</span>
+            <div class="doc-item">Civil Defence 등록 구조 엔지니어 선임</div>
+            <div class="doc-item">풍압 및 기초 설계 계산서</div>
+            <div class="doc-item">MEP(기계·전기·소방) 도면 검수</div>
+          </div>
+        </div>
+
+        <div class="stage-card">
+          <div class="stage-number">3️⃣</div>
+          <div class="stage-title">지자체(DM/<span class="keyword">ADM</span>) <span class="keyword">가설건축물 승인</span></div>
+          <div class="stage-purpose">평면 배치, 막재 사양, 기초 앵커링, 전기·공조(HVAC) 도면을 <span class="keyword">온라인 시스템(DARI)</span> 제출</div>
+          <div class="stage-docs">
+            <span class="stage-docs-label">필수 제출물:</span>
+            <div class="doc-item">상세 평면 배치도(Layout)</div>
+            <div class="doc-item">막재 사양 및 재질 증명서</div>
+            <div class="doc-item">기초 설계도(Anchoring System)</div>
+            <div class="doc-item">전기 및 공조(HVAC) 설계도</div>
+          </div>
+        </div>
+
+        <div class="stage-card">
+          <div class="stage-number">4️⃣</div>
+          <div class="stage-title">소방방재청(DCD/<span class="keyword">ADCD</span>) <span class="keyword">승인</span> <span class="keyword">+</span> <span class="keyword">Hassantuk</span></div>
+          <div class="stage-purpose"><span class="keyword">Civil Defense 준공 승인서</span> 취득 및 <span class="keyword">Hassantuk 스마트 모니터링 시스템</span> 의무 연동</div>
+          <div class="stage-docs">
+            <span class="stage-docs-label">필수 서류 & 장치:</span>
+            <div class="doc-item">막재 NFPA 701 방염 성적서</div>
+            <div class="doc-item">비상구(최소 2개, 각 2m 이상) 설계도</div>
+            <div class="doc-item">소화 장비 위치 도면</div>
+            <div class="doc-item">Hassantuk 24시간 화재 감지 시스템 연동</div>
+          </div>
+        </div>
+
+        <div class="stage-card">
+          <div class="stage-number">5️⃣</div>
+          <div class="stage-title">전력 및 용수 <span class="keyword">NOC</span> (DEWA/<span class="keyword">ADDC</span>)</div>
+          <div class="stage-purpose">에어돔 지속 송풍기(Blower) 및 공조기(HVAC) 가동을 위한 가설 전력/용수 <span class="keyword">승인</span></div>
+          <div class="stage-docs">
+            <span class="stage-docs-label">필수 승인:</span>
+            <div class="doc-item">DEWA/ADDC 가설 전력 연결 NOC</div>
+            <div class="doc-item">최대 전력 부하(kVA) 사양</div>
+            <div class="doc-item">비상 디젤 발전기 사양 제출</div>
+          </div>
+        </div>
+
+        <div class="stage-card">
+          <div class="stage-number">6️⃣</div>
+          <div class="stage-title">현장 실사 <span class="keyword">&</span> <span class="keyword">최종 사용허가증</span></div>
+          <div class="stage-purpose">지자체 및 Civil Defense 합동 현장 실사 — 설계도 일치, 비상 송풍기 자동 전환 및 <span class="keyword">Hassantuk 연동</span> 테스트</div>
+          <div class="stage-docs">
+            <span class="stage-docs-label">최종 결과:</span>
+            <div class="doc-item">사용허가증/준공 승인서(Completion Certificate)</div>
+            <div class="doc-item">Hassantuk 시스템 연동 확인</div>
+            <div class="doc-item">정상 운영 가능 승인</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">⚖️ 3. 주요 법적 근거 및 공식 인용문</h2>
+      
+      <div class="basis-section">
+        <div class="basis-item">
+          <div class="basis-label">📌 UAE Fire & Life Safety Code — 임시 막구조물의 법적 정의</div>
+          <div class="basis-doc-ref">근거: UAE Directorate General of Civil Defence – UAE Fire and Life Safety Code of Practice (2017/2026 Updated)</div>
+          <div class="basis-quote">
+            "A temporary structure, the covering of which is made of pliable material... Consultants, contractors, maintenance companies, decor companies, house of conformity certification bodies shall be registered and licensed by Civil Defence."
+          </div>
+          <div class="basis-interpretation">
+            <span class="keyword">해석:</span> 에어돔은 <span class="keyword">유연한 막재로 제작된 임시 구조물</span>이며, 설계·시공·유지보수 관련 모든 업체는 반드시 <span class="keyword">Civil Defence 라이선스 보유</span>해야 함
+          </div>
+        </div>
+
+        <div class="basis-item">
+          <div class="basis-label">📌 ADOSH-SF CoP 43.0 — 안전보건 요구사항 및 이격 거리</div>
+          <div class="basis-doc-ref">근거: Abu Dhabi Public Health Center (ADPHC) – ADOSH-SF CoP 43.0 (Temporary Structures, Version 4.0)</div>
+          <div class="basis-quote">
+            "Employers shall ensure that a plan covering the following points is submitted to the concerned SRA at least 10 working days before the scheduled erection of any tent or canopy... tents, canopies, or membrane structures shall not be located within 6 meters of plot lines, buildings, other tents, parked vehicles or internal combustion engines."
+          </div>
+          <div class="basis-interpretation">
+            <span class="keyword">필수:</span> 설치 최소 <span class="keyword">10일 전</span> 관할 당국에 계획서 제출 필수이며, 에어돔은 대지 경계선·타 건물·주차 차량 등으로부터 최소 <span class="keyword">6미터 이상 이격</span>
+          </div>
+        </div>
+
+        <div class="basis-item">
+          <div class="basis-label">📌 Dubai Municipality — 가설건축물 허가 신청 의무</div>
+          <div class="basis-doc-ref">근거: Dubai Municipality / Abu Dhabi Municipality – Temporary Structure Approval Guidelines</div>
+          <div class="basis-quote">
+            "Before starting any temporary structure work in Dubai, you will need to obtain the necessary permits from the Municipality. This includes a trade license, an NOC from the building owner, and a permit for carrying out temporary structure work."
+          </div>
+          <div class="basis-interpretation">
+            <span class="keyword">의무:</span> 상업등록증, 토지주 <span class="keyword">NOC</span>, 가설 작업 허가권을 사전 확보하고 지자체 승인 필수
+          </div>
+        </div>
+
+        <div class="basis-item">
+          <div class="basis-label">📌 Civil Defence 등록 엔지니어 — 기술 도면 서명 의무</div>
+          <div class="basis-doc-ref">근거: UAE Directorate General of Civil Defence – Consultant & Contractor Registration Directives</div>
+          <div class="basis-quote">
+            "All drawings, calculations & related design reports shall be signed and endorsed by the designated Consultant Engineer registered with Civil Defence."
+          </div>
+          <div class="basis-interpretation">
+            <span class="keyword">필수:</span> 모든 풍압·구조 계산서 및 MEP 도면은 <span class="keyword">Civil Defence 등록 엔지니어</span> 서명·검수 필수
+          </div>
+        </div>
+
+        <div class="basis-item">
+          <div class="basis-label">📌 DCD 준공 승인 및 Hassantuk 의무 연동</div>
+          <div class="basis-doc-ref">근거: Dubai Civil Defense (DCD) – Fire & Life Safety Approval Directives</div>
+          <div class="basis-quote">
+            "Every commercial premises in Dubai requires a DCD Completion Certificate before the business can legally open, regardless of size, zone, or business activity... Hassantuk smart monitoring is mandatory for all commercial premises."
+          </div>
+          <div class="basis-interpretation">
+            <span class="keyword">필수:</span> 모든 상업·가설 시설은 <span class="keyword">DCD 준공 승인서</span> 필수이며, <span class="keyword">Hassantuk 24시간 화재 감지 시스템</span> 연동 의무화
+          </div>
+        </div>
+
+        <div class="basis-item">
+          <div class="basis-label">📌 비상구 및 방염 규격 — ADOSH-SF CoP 43.0</div>
+          <div class="basis-doc-ref">근거: ADOSH-SF CoP 43.0 Section 3.4.1 (Egress & Fire Safety Requirements)</div>
+          <div class="basis-quote">
+            "A minimum of 2 exits shall be provided and each exit shall be of minimum 2 meters wide irrespective of occupant load... the upper building shall be fire rated in accordance with the Civil Defence requirements."
+          </div>
+          <div class="basis-interpretation">
+            <span class="keyword">필수:</span> 수용 인원과 관계없이 최소 <span class="keyword">2개 비상구(각 2m 이상 너비)</span> 설치 필수이며, 막재는 <span class="keyword">Civil Defence 승인 방염 기준(NFPA 701)</span> 충족
+          </div>
+        </div>
+
+        <div class="basis-item">
+          <div class="basis-label">📌 DEWA/ADDC 전력·용수 승인</div>
+          <div class="basis-doc-ref">근거: Dubai Electricity and Water Authority (DEWA) / Abu Dhabi Distribution Company (ADDC) – Utility Connection Guidelines</div>
+          <div class="basis-quote">
+            "Once the Municipality approves the temporary structure plans, you will need to obtain approvals from other relevant authorities. This includes DEWA for electrical and plumbing works..."
+          </div>
+          <div class="basis-interpretation">
+            <span class="keyword">필수:</span> 지자체 기본 승인 후, 송풍기(Blower) 및 HVAC 가동을 위한 <span class="keyword">DEWA/ADDC 가설 전력·용수 연결 승인</span> 필수
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">⚠️ 4. UAE 실무 검토 시 핵심 주의사항</h2>
+      
+      <div class="critical-box">
+        <div class="critical-title">🔴 Hassantuk 원격 화재 감지 시스템 필수 연동 (가장 중요)</div>
+        <div class="critical-content">
+          UAE는 <span class="keyword">모든 상업 및 가설 시설</span>에 <span class="keyword">Hassantuk 알람 시스템</span> 연결을 강제하고 있습니다. 에어돔 수신반(컨트롤 센터) 및 공조 시스템이 <span class="keyword">Hassantuk 스마트 모듈과 호환</span>되는지 사전 확인이 필수이며, 미연동 시 준공 승인이 불가능합니다.
+        </div>
+      </div>
+      
+      <div class="recommendation-box">
+        <div class="rec-item">
+          <div class="rec-title">⏱️ 비상 백업 전력 및 풍압 모니터링 (경보 확인 120초)</div>
+          <div class="rec-content">
+            에어돔 공기압 유지가 중단되면 <span class="keyword">붕괴 위험</span>이 있으므로, 정전 시 <span class="keyword">자동 전환되는 비상 발전기(Diesel Backup Blower)</span> 설치 계획서와 <span class="keyword">풍속 변화에 따른 기압 자동 조절 시스템</span> 사양이 DCD 심사 핵심 제출 항목입니다. 참고로 Hassantuk 경보수신센터(ARC)의 <span class="keyword">화재경보 진위 확인 기준 시간은 120초 이내</span>입니다 (이는 화재감지 확인 절차이며, 비상 발전기 자동 전환 시간과는 별개 개념).
+          </div>
+        </div>
+        
+        <div class="rec-item">
+          <div class="rec-title">🗺️ 토후국별(두바이 vs 아부다비) 관할 차이 및 자유무역지대 NOC</div>
+          <div class="rec-content">
+            UAE는 각 토후국별로 규정 및 승인 절차가 상이하며, 자유무역지대의 경우 추가 NOC가 필요합니다:
+          </div>
+        </div>
+      </div>
+
+      <div class="uae-region-box">
+        <strong>두바이 일반 지역:</strong> Dubai Municipality + DCD<br/>
+        <strong>아부다비 일반 지역:</strong> Abu Dhabi Municipality + ADCD + ADOSH-SF (CoP 43.0, Version 4.0)<br/>
+        <strong>자유무역지대(JAFZA, DAFZA, KIZAD 등):</strong> 해당 프리존 당국(Trakhees, JAFZA Authority 등)의 <span class="keyword">사전 NOC 필수</span>
+      </div>
+
+      <div class="recommendation-box">
+        <div class="rec-item">
+          <div class="rec-title">📏 6미터 이격 거리 규정 (ADOSH-SF)</div>
+          <div class="rec-content">
+            에어돔은 <span class="keyword">대지 경계선, 타 건물, 주차 차량, 내연기관 등으로부터 최소 6미터 이상의 이격 거리</span>를 유지해야 합니다. 부지 선택 단계에서 이 규정을 고려하여 사전 검토하는 것을 권장합니다.
+          </div>
+        </div>
+      </div>
+
+      <div class="fact-check-note">
+        <strong>📌 Fact-Check 참고 (2026-08-10):</strong> Hassantuk 확인시간 "120초"는 다수 공개 자료에서 일관되게 확인되나, 프리존별 임시구조물 NOC 세부 절차는 공개 자료가 제한적이라 원출처 재확인을 권장합니다.
+      </div>
+    </div>
+
+    <div class="footer">
+      본 보고서는 UAE 공식 가이드라인 및 규정(UAE Fire & Life Safety Code, ADOSH-SF CoP 43.0, Dubai/Abu Dhabi Municipality, Civil Defense 규정)을 기반으로 작성되었습니다.
+      <div class="footer-divider">—</div>
+      <strong>Fact-Check Status (2026-08-10):</strong> Section 1에서 ADOSH-SF 명칭 변경 및 최신 Version 4.0 정보 추가<br/>
+      최신 규정 변경사항은 Dubai Municipality, Abu Dhabi Municipality, Dubai Civil Defense(DCD), Abu Dhabi Civil Defense(ADCD), ADPHC 공식 사이트에서 확인하시기 바랍니다.<br/>
+      본 문서는 참고용이며, 실제 프로젝트 진행 시 토후국별 Civil Defence 등록 컨설턴트와의 협의를 강력히 권장합니다.
+    </div>
+  </div>
+</body>
+</html>
